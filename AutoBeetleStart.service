@@ -1,0 +1,12 @@
+[Unit]
+Description=Run Beetle Cameras on Raspberry Pi startup
+
+[Service]
+ExecStart=sh /home/bugs/Desktop/AutoBeetle-BeetleMonitoring/startup.sh
+Type=exec      #the linux handbook says that usually 'exec' is preferable to 'simple' and that it's recommended for long-running services. BUT any type other simple may delay the boot process.
+
+[Install]
+#don't think anything goes in here
+
+
+
